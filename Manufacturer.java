@@ -1,17 +1,8 @@
-package com.stackroute.neo4j.entity;
-
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import org.neo4j.ogm.annotation.Id;
-import org.neo4j.ogm.annotation.NodeEntity;
+package com.stackroute.onlinefashionretail.consumer.Domain;
 
 import java.util.List;
 
-@AllArgsConstructor
-@NoArgsConstructor
-@NodeEntity
 public class Manufacturer {
-    @Id
     private String id;
     private String name;
     private String email;

@@ -1,18 +1,14 @@
-package com.stackroute.neo4j.entity;
+package com.stackroute.onlinefashionretail.consumer.Domain;
 
-import org.neo4j.ogm.annotation.Id;
 
 import java.util.List;
 import java.util.Map;
 
-
 public class DesignerOrder {
-    @Id
     private String id;
     private Design designOrder;
     private List<Map<Mapping,Double>> supplierList;
     private Manufacturer manufacturer;
-    private Designer designer;
     private String tagId;
 
 
@@ -56,14 +52,6 @@ public class DesignerOrder {
         this.manufacturer = manufacturer;
     }
 
-    public Designer getDesigner() {
-        return designer;
-    }
-
-    public void setDesigner(Designer designer) {
-        this.designer = designer;
-    }
-
     @Override
     public String toString() {
         return "Dorder{" +
@@ -71,7 +59,6 @@ public class DesignerOrder {
                 ", designOrder=" + designOrder +
                 ", supplierList=" + supplierList +
                 ", manufacturer=" + manufacturer +
-                ", designer=" + designer +
                 '}';
     }
 }

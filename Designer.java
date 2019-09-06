@@ -1,26 +1,15 @@
-package com.stackroute.neo4j.entity;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import org.neo4j.ogm.annotation.Id;
-import org.neo4j.ogm.annotation.NodeEntity;
-import org.neo4j.ogm.annotation.Relationship;
+package com.stackroute.onlinefashionretail.consumer.Domain;
 
 import java.util.List;
 
-@AllArgsConstructor
-@NoArgsConstructor
-@NodeEntity
 public class Designer
 {
-    @Id
     private String id;
     private String name;
     private String city;
     private float rating;
     private String email;
     private long contactNumber;
-
-    @Relationship(type = "has_ordered")
     private List<DesignerOrder> orderList;
 
     public List<DesignerOrder> getOrderList() {

@@ -1,18 +1,13 @@
-package com.stackroute.neo4j.entity;
-
-import org.neo4j.ogm.annotation.Id;
+package com.stackroute.onlinefashionretail.consumer.Domain;
 
 public class SupplierOrder
 {
-    @Id
     private String id;
-    private Designer designer;
+    private String designerName;
     private Material material;
     private double quantity;
     private String orderStatus;
     private String tagId;
-
-
 
     public String getTagId() {
         return tagId;
@@ -38,12 +33,12 @@ public class SupplierOrder
         this.id = id;
     }
 
-    public Designer getDesigner() {
-        return designer;
+    public String getDesignerName() {
+        return designerName;
     }
 
-    public void setDesigner(Designer designer) {
-        this.designer = designer;
+    public void setDesignerName(String designerName) {
+        this.designerName = designerName;
     }
 
     public Material getMaterial() {
@@ -65,7 +60,7 @@ public class SupplierOrder
     public String toString() {
         return "SupplierOrder{" +
                 "id='" + id + '\'' +
-                ", designer=" + designer +
+                ", designer=" + designerName +
                 ", material=" + material +
                 ", quantity=" + quantity +
                 ", orderStatus='" + orderStatus + '\'' +
