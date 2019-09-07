@@ -7,7 +7,7 @@ import java.util.Map;
 public class DesignerOrder {
     private String id;
     private Design designOrder;
-    private List<Map<Mapping,Double>> supplierList;
+    private List<Map<String,Double>> supplierList;
     private Manufacturer manufacturer;
     private String tagId;
 
